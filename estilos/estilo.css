@@ -1,0 +1,142 @@
+
+@charset "UTF-8";
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: rgb(240, 247, 239);
+    color: rgb(45, 65, 48);
+}
+
+header, footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgb(66, 73, 66);
+    color: rgb(255, 255, 255);
+}
+
+nav{
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7eac84;
+    }
+
+    ul li {
+    float: left;
+    }
+
+    ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    ul li a:hover {
+    background-color: #111111;
+    }
+}
+    
+#mision{
+    flex: 3;
+    background-color: rgb(219, 230, 218);
+    padding: 20px;
+    border-radius: 8px;
+}
+#mapa{
+    flex: 3;
+    background-color: rgb(101, 161, 104);
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    
+}
+
+.content
+{
+display: flex;
+flex-direction: row; /* Coloca los elementos en fila (por defecto) */
+ gap: 10px; /* Espacio de separación entre el main y el aside
+*/
+}
+main {
+ max-width: 1500px;
+ margin: 20px auto; /* Centra el contenido principal */
+ padding: 1rem;
+ flex: 3; /* O usa un ancho como width: 70%; */
+
+}
+aside{
+ flex: 1; /* O usa un ancho como width: 30%; */
+ background-color: #5c976b;
+ padding: 5px;
+ margin-bottom: 30px;
+}
+#imgSec{
+
+    width: 50%;
+    max-width: 100px;      
+    margin: 30px auto 0 auto;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+.catalogo img {
+    width: 300px;
+    height:400px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(105, 238, 107, 0.7); 
+}
+
+.blanda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.blanda img{
+    width: 300px;
+    height:400px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(143, 225, 0, 0.7); 
+}
+
+
+#div1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    }
+footer li{
+list-style: none;
+font:bold 14px verdana;
+padding: 10px;
+display: inline-block;
+}   
+
+
+/* Media Query: Transformación fluida de fila a columna para móviles */
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
